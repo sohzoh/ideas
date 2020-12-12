@@ -1,0 +1,6 @@
+[submodule "themes/minimo"]
+	path = themes/minimo
+	url = git@github.com:MunifTanjim/minimo.git
+[submodule "docs"]
+	path = docs
+	url = git@github.com:sohzoh/sohzoh.github.io.git
