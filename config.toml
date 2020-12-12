@@ -1,5 +1,50 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "https://sohzoh.github.io/"
+languageCode = "ja-jp"
+title = "対話と思考と実践"
 theme = "minimo"
+contentDir = "post"
 publishDir = "docs"
+
+Paginate = 20
+
+enableEmoji = true
+
+defaultContentLanguage = "ja"
+
+[params.info]
+title404 = "このページは存在しません"
+
+[params.assets]
+favicon = "favicon.ico"
+
+[params.copyright]
+prefix = ""
+holder = "中村 直紀"
+startYear = "2020"
+suffix = ""
+
+[params.settings]
+dataFormat = "2006-01-02"
+listDateFormat = "2006-01-02"
+archiveDataFormat = "2006-01-02"
+accentColor = "#222222"
+
+[params.sidebar]
+enable = true
+
+[params.widgets]
+homepage = []
+sidebar = ["about", "sidebar_menu", "taxonomy_cloud"]
+footer = ["social_menu"]
+
+[params.social]
+twitter = "jg_im"
+facebook = "n.nkmr"
+github = "nuekodory"
+email = "agent@sohzoh.com"
+
+[params.search]
+client = "fuse"
+
+[taxonomies]
+tag = "tags"

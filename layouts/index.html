@@ -1,0 +1,28 @@
+{{ partial "header" . }}
+
+{{ if .Content }}
+<div class='entry'>
+  {{ partial "entry/cover" . }}
+  {{ partial "entry/content" . }}
+</div>
+{{ end }}
+<div class='container'>
+  <h3>一覧</h3>
+  <ul>  
+  {{ range .Site.RegularPages }}
+  <li>
+    <a href="{{ .Permalink }}">{{ .Title }} </a>{{ .Date.Format "2006-01-02" }}
+  </li>
+  {{ end }}
+  </ul>
+</div>
+{{- $homepageWidgets := .Site.Params.widgets.homepage -}}
+{{- if $homepageWidgets -}}
+<div class='home-widgets'>
+  <div class='container sep-before'>
+    {{- partial "extras/widget_area" ( dict "Widgets" $homepageWidgets "Scope" . ) -}}
+  </div>
+</div>
+{{- end -}}
+
+{{ partial "footer" . }}

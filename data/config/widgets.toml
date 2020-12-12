@@ -1,0 +1,15 @@
+[about]
+description = ""
+logo = "favicon.png"
+
+[search]
+title = "検索"
+
+[social_menu]
+title = ""
+platforms = ["twitter", "facebook", "github", "email"]
+
+[taxonomy_cloud]
+title = "タグ"
+taxonomy = "tags"
+shuffle = false
