@@ -11,6 +11,9 @@ enableEmoji = true
 
 defaultContentLanguage = "ja"
 
+[params]
+customCSS = ["/css/sohzoh.css"]
+
 [params.info]
 title404 = "このページは存在しません"
 
